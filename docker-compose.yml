@@ -1,0 +1,11 @@
+services:
+  shrewdwebnext:
+    build:
+      context: .
+    container_name: shrewdwebnext
+    restart: unless-stopped
+    networks:
+      - nginxproxy_nginx_proxy
+networks:
+    nginxproxy_nginx_proxy:
+      external: true

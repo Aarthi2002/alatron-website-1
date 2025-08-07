@@ -1,0 +1,100 @@
+.newsletterSection {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .newsletterText {
+    color: #6c757d;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  
+  .emailForm {
+    display: flex;
+    gap: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .emailInput {
+    flex: 1;
+    padding: 16px 24px;
+    border: 2px solid #e9ecef;
+    border-right: none;
+    font-size: 14px;
+    outline: none;
+    background: white;
+    border-radius: 50px 0 0 50px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .emailInput:focus {
+    border-color: #007bff;
+  }
+  
+  .emailInput::placeholder {
+    color: #adb5bd;
+  }
+  
+  .emailInput:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+  }
+  
+  .sendBtn {
+    padding: 16px 28px;
+    background: #6c757d;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 0 50px 50px 0;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .sendBtn:hover:not(:disabled) {
+    background: #5a6268;
+  }
+  
+  .sendBtn:active:not(:disabled) {
+    transform: translateY(1px);
+  }
+  
+  .sendBtn:disabled {
+    background: #adb5bd;
+    cursor: not-allowed;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 480px) {
+    .newsletterSection {
+      padding: 30px 20px;
+    }
+    
+    .emailForm {
+      flex-direction: column;
+      border-radius: 8px;
+    }
+    
+    .emailInput {
+      border-radius: 8px 8px 0 0;
+      border-right: 2px solid #e9ecef;
+      border-bottom: none;
+    }
+    
+    .sendBtn {
+      border-radius: 0 0 8px 8px;
+    }
+  }
